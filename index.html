@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container col-9 pole">
+		<img src="pole.png" class="w-100">
+	</div>
+	<div class="game" style="display: none;">
+		<div class="container col-9 pt-4 py-5">
+			<div class="container col-12 bg-warning">
+				<h3 class="text-uppercase py-3">Cтрунно-смычковый  музыкальный инструмент, на котором играл Шерлок Холмс</h3>
+			</div>
+			<div class="container col-12 mt-4">
+				<div class="row">
+					<div class="bukvaC border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">С</div>
+					<div class="bukvaK border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">К</div>
+					<div class="bukvaR border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">Р</div>
+					<div class="bukvaI border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">И</div>
+					<div class="bukvaP border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">П</div>
+					<div class="bukvaK2 border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">К</div>
+					<div class="bukvaA border px-2 py-2" style="height: 130px; width: 110px; font-size: 80px; color: black; background-color: black;">А</div>
+				</div>
+			</div>
+			<div class="container col-12 mt-4 py-2">
+				<h3 class="text-uppercase py-2">
+					<span class="bukva1">A</span>
+					<span class="bukva2">Б</span>
+					<span class="bukva3">В</span>
+					<span class="bukva4">Г</span>
+					<span class="bukva5">Д</span>
+					<span class="bukva6">Е</span>
+					<span class="bukva7">Ё</span>
+					<span class="bukva8">Ж</span>
+					<span class="bukva9">З</span>
+					<span class="bukva10">И</span>
+					<span class="bukva11">Й</span>
+					<span class="bukva12">К</span>
+					<span class="bukva13">Л</span>
+					<span class="bukva14">М</span>
+					<span class="bukva15">Н</span>
+					<span class="bukva16">О</span>
+					<span class="bukva17">П</span>
+					<span class="bukva18">Р</span>
+					<span class="bukva19">С</span>
+					<span class="bukva20">Т</span>
+					<span class="bukva21">У</span>
+					<span class="bukva22">Ф</span>
+					<span class="bukva23">Х</span>
+					<span class="bukva24">Ц</span>
+					<span class="bukva25">Ч</span>
+					<span class="bukva26">Ш</span>
+					<span class="bukva27">Щ</span>
+					<span class="bukva28">Ъ</span>
+					<span class="bukva29">Ы</span>
+					<span class="bukva30">Ь</span>
+					<span class="bukva31">Э</span>
+					<span class="bukva32">Ю</span>
+					<span class="bukva33">Я</span>
+				</h3>
+			</div>
+		</div>
+		<h2>"В эфире капитал шоу поле чудес! Вам нужно угадать слово"</h2>
+		<div class="col-4">
+			<img src="start.png" class="w-75" style="position: absolute;">
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		let y = function(){
+			document.querySelector(".pole").style.display ="none"
+			document.querySelector(".game").style.display ="block"
+		}
+
+		setTimeout(y,3000);
+		// правильные//
+		document.querySelector(".bukva1").onclick = function(){
+			alert("Правильно")
+			document.querySelector(".bukvaA").style.color = "white"
+		}
+		document.querySelector(".bukva10").onclick = function(){
+			alert("Правильно")
+			document.querySelector(".bukvaI").style.color = "white"
+		}
+		document.querySelector(".bukva12").onclick = function(){
+			alert("Правильно")
+			document.querySelector(".bukvaK").style.color = "white"
+			document.querySelector(".bukvaK2").style.color = "white"
+		}
+		document.querySelector(".bukva17").onclick = function(){
+			alert("Правильно")
+			document.querySelector(".bukvaP").style.color = "white"
+		}
+		document.querySelector(".bukva18").onclick = function(){
+			alert("Правильно")
+			document.querySelector(".bukvaR").style.color = "white"
+		}
+		document.querySelector(".bukva19").onclick = function(){
+			alert("Правильно")
+			document.querySelector(".bukvaC").style.color = "white"
+		}
+
+
+		// неправильные//
+
+		let x = function(){
+			alert("Неправильно")
+		}
+
+		document.querySelector(".bukva2").onclick = x
+		document.querySelector(".bukva3").onclick = x
+		document.querySelector(".bukva4").onclick = x
+		document.querySelector(".bukva5").onclick = x
+		document.querySelector(".bukva6").onclick = x
+		document.querySelector(".bukva7").onclick = x
+		document.querySelector(".bukva8").onclick = x
+		document.querySelector(".bukva9").onclick = x
+		document.querySelector(".bukva11").onclick = x
+		document.querySelector(".bukva13").onclick = x
+		document.querySelector(".bukva14").onclick = x
+		document.querySelector(".bukva15").onclick = x
+		document.querySelector(".bukva16").onclick = x
+		document.querySelector(".bukva20").onclick = x
+		document.querySelector(".bukva21").onclick = x
+		document.querySelector(".bukva22").onclick = x
+		document.querySelector(".bukva23").onclick = x
+		document.querySelector(".bukva24").onclick = x
+		document.querySelector(".bukva25").onclick = x
+		document.querySelector(".bukva26").onclick = x
+		document.querySelector(".bukva27").onclick = x
+		document.querySelector(".bukva28").onclick = x
+		document.querySelector(".bukva29").onclick = x
+		document.querySelector(".bukva30").onclick = x
+		document.querySelector(".bukva31").onclick = x
+		document.querySelector(".bukva32").onclick = x
+		document.querySelector(".bukva33").onclick = x
+
+	</script>
+</body>
+</html>
